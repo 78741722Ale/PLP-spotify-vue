@@ -1,7 +1,6 @@
 <template>
-    <div>
-        SiteHeader
-    </div>
+    <!-- Header Goes Here -->
+    <div class="container-fluid" id="site_header"></div>
 </template>
 
 <script>

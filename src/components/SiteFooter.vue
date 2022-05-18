@@ -1,7 +1,6 @@
 <template>
-    <div>
-        SiteFooter
-    </div>
+    <!-- sitemain Goes Here -->
+    <div class="container-fluid" id="site_footer"></div>
 </template>
 
 <script>

@@ -1,7 +1,6 @@
 <template>
-    <div>
-        SiteMain
-    </div>
+    <!-- sitemain Goes Here -->
+    <div class="container-fluid" id="site_main"></div>
 </template>
 
 <script>
