@@ -1,6 +1,10 @@
 <template>
     <!-- sitemain Goes Here -->
-    <div class="container-fluid" id="site_footer"></div>
+    <div id="site_footer">
+        <div class="container-xl bordo h-100 p-0">
+            Sitefooter qui
+        </div>
+    </div>
 </template>
 
 <script>

@@ -1,9 +1,26 @@
 /* Palette colori figma */
 
+$header-bg-color: rgba(0, 0, 0, 1);
+$header-text-color: rgba(255, 255, 255, 1);
+$price-text-color: rgba(255, 255, 255, 1);
+$price-bg-color: rgba(153, 51, 153, 1);
+$listening-text-color: rgba(30, 215, 96, 1);
+$listening-btn-bg-color: rgba(30, 215, 96, 1);
+$listening-bg-color: rgba(41, 65, 171, 1);
+$listening-btn-text-color: rgba(41, 65, 171, 1);
+$footer-bg-color: rgba(0, 0, 0, 1);
+$footer-icons-color: rgba(255, 255, 255, 1);
+$footer-copy-color: rgba(221, 221, 221, 1);
+$footer-list-text-color: rgba(246, 246, 246, 1);
+
+
+
+
 /* Dimensioni containers */
 #site_header {
     height: 80px;
-    background-color: aquamarine;
+    background-color: $header-bg-color;
+    color: $header-text-color;
 }
 
 #site_main {
@@ -13,8 +30,40 @@
 
 #site_footer {
     height: 530px;
-    background-color: rgb(20, 220, 220);
+    background-color: $footer-bg-color;
 }
 
+#site_price {
+    height: 635px;
+    background-color: $price-bg-color;
+    color: $price-text-color;
 
+}
 
+#site_listening {
+    height: calc(100% - 635px);
+    background-color: $listening-bg-color;
+    color: $listening-text-color;
+}
+
+/* Classi Utilities */
+.flex_cent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_bet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Classe sicurezza del bordo */
+.bordo {
+    border: 2px solid rgb(32, 238, 32);
+}
+.bg_try {
+    background-color: rgb(236, 173, 14);
+    border: 2px solid black;
+}
