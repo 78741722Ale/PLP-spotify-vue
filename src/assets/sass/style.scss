@@ -1,2 +1,8 @@
+/* Import dei fogli di stile generali */
+@import '@/assets/sass/partials/header.scss';
+@import '@/assets/sass/partials/main.scss';
+@import '@/assets/sass/partials/footer.scss';
+@import '@/assets/sass/partials/app.scss';
+
 /* Import del foglio di stile bootstrap */
 @import '~/node_modules/bootstrap/scss/bootstrap.scss';
