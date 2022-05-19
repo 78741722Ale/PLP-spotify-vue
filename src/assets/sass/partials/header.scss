@@ -1,0 +1,18 @@
+/* Lista non ordinata Navbar */
+ul {
+    list-style: none;
+    li {
+        padding: 0 2rem 0 0;
+        a {
+            color: inherit;
+            font-size: 0.9rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+}
+
+/* Collegamenti (list item navbar) all'hover */
+li a:hover {
+    color: rgb(7, 250, 59);
+}
