@@ -57,6 +57,10 @@
     }
 }
 
+.premium_specs > button:hover {
+    color: rgb(7, 250, 59);
+}
+
 /*#endregion */
 
 /*#region SiteListening */
@@ -66,6 +70,10 @@
     justify-content: start;
     align-items: center;
     width: 100%;
+}
+
+.listening_specs > button:hover {
+    color: rgb(0, 0, 0);
 }
 
 .listening_specs {
@@ -108,6 +116,5 @@
         font-weight: 600;
     }
 }
-
 
 /*#endregion */
