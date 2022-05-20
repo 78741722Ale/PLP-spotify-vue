@@ -3,40 +3,27 @@
     <div id="site_footer">
         <div class="container-xl footer_cont">
             <div class="row h-75 w-100 m-0">
-                <!-- unordered list zone -->
-                <div class="col-8 p-0 h-100 bordo">
-                    <!-- Row for the unordered list -->
-                    <div class="row h-100 w-100 m-0 flex-wrap">
-                        <!-- Footer logo -->
-                        <div class="col-3 h-75 bordo">Footer logo</div>
-                        <!-- Azienda -->
-                        <div class="col-3 h-75 bordo">Azienda</div>
-                        <!-- Community -->
-                        <div class="col-3 h-75 bordo">Community</div>
-                        <!-- Link Utili -->
-                        <div class="col-3 h-75 bordo">Link Utili</div>
-                        <!-- Information -->
-                        <div class="col-12 h-25 bordo">Informazioni legali</div>
-                    </div>
-                </div>
-                <!-- brands zone -->
-                <div class="col-4 p-0 h-100">
-                    <!-- Row for the brands list -->
-                    <div class="row h-100 w-100 m-0 brands bordo">
-                        <!-- Brands -->
-                        <div class="col-12 h-25 bordo">Brands Zone</div>
-                        <!-- Zone -->
-                        <div class="col-12 h-25 bordo">Client Zone</div>
-                    </div>
-                </div>
+                <!-- Footer left zone -->
+                <FooterLeftZone />
+                <!-- Footer Rigth zone -->
+                <FooterRigthZone />
             </div>
         </div>
     </div>
 </template>
 
 <script>
+/* Import dei componenti */
+import FooterLeftZone from '@/components/footer/FooterLeftZone.vue'
+import FooterRigthZone from '@/components/footer/FooterRigthZone.vue'
+
+
 export default {
-    name: "SiteFooter"
+    name: "SiteFooter",
+    components : {
+        FooterLeftZone,
+        FooterRigthZone
+    }
 }
 </script>
 
