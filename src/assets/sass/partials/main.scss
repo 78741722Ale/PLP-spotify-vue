@@ -5,6 +5,58 @@
     aspect-ratio: 1 / 1;
 }
 
+.premium_specs {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+    /* Titolo premium */
+    h5 {
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+    /* Hero Title */
+    h1 {
+        font-size: 62px;
+        text-align: left;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    /* Hero Text */
+    p {
+        font-size: 1.4rem;
+        text-align: left;
+        font-weight: 500;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        width: 83%;
+    }
+    /* Hero Button */
+    button {
+        text-transform: uppercase;
+        font-size: 0.95rem;
+        border: 0;
+        color: $price-text-color;
+        background-color: $header-bg-color;
+        padding: 1rem 1.3rem 1rem 1.3rem;
+        border-radius: 1.8rem;
+        font-weight: 600;
+    }
+    /* Hero Subtitle */
+    span {
+        text-align: left;
+        font-size: 0.8rem;
+        width: 73%;
+        font-weight: 500;
+        word-spacing: 1px;
+    }
+    /* Subtitle Class */
+    .subtitle {
+        text-decoration: underline;
+    }
+}
+
 
 
 /*#endregion */

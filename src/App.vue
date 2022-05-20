@@ -28,5 +28,6 @@ export default {
 
 <style lang="scss">
 /* Foglio di stile principale racchiude ogni foglio di stile*/
+@import '@/assets/sass/partials/app.scss';
 @import '@/assets/sass/style.scss';
 </style>
