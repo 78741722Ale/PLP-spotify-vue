@@ -42,6 +42,14 @@ $footer-list-text-color: rgba(246, 246, 246, 1);
     height: calc(100% - 635px);
     background-color: $listening-bg-color;
     color: $listening-text-color;
+    position: relative;
+    /* Immagine di sfondo */
+    img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+    }
 }
 
 /* Classi Utilities */

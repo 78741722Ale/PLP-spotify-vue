@@ -57,6 +57,57 @@
     }
 }
 
+/*#endregion */
+
+/*#region SiteListening */
+.listening_row_cont {
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+
+.listening_specs {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0;
+    /* Titolo Spotify Free */
+    h5 {
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+    /* Title Listening */
+    h1 {
+        font-size: 56px;
+        text-align: left;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    /* Listening Text */
+    p {
+        font-size: 1.4rem;
+        text-align: left;
+        font-weight: 500;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        width: 83%;
+    }
+    /* Listening Button */
+    button {
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        border: 0;
+        color:  $listening-bg-color;
+        background-color: $listening-btn-bg-color;
+        padding: 1rem 1.3rem 1rem 1.3rem;
+        border-radius: 1.8rem;
+        font-weight: 600;
+    }
+}
 
 
 /*#endregion */
