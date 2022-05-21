@@ -24,28 +24,27 @@
 </template>
 
 <script>
-/* Import Component lists */
+/* Import of Component lists */
 import AziendeComponent from '@/components/footer/AziendeComponent.vue'
 import CommunityComponent from '@/components/footer/CommunityComponent.vue'
 import LinksComponent from '@/components/footer/LinksComponent.vue'
 
-
 export default {
   name: "FooterRightZone",
-  /* Component */
+  /* Components */
   components : {
     AziendeComponent,
     CommunityComponent,
     LinksComponent
   },
   
-  /* Struttura Dati */
+  /* Data Structure */
   data() {
     return {
-    /* Classi Dinamiche */
+    /* Dynamic classes */
       footer_lz_cont : "col-8 p-0 h-100",
       footer_lz_row : "row h-100 w-100 m-0 flex-wrap",
-     /* Dati dinamici */
+     /* Dynamic Data */
       footer_lz_logo : require("@/assets/img/h_logo.png"),
       footer_lz_logo_desc : "Spotify logo footer",
       info : [
@@ -76,6 +75,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/* Import del foglio di stile */
+/* Import style sheet from partials */
 @import "@/assets/sass/partials/footer.scss";
 </style>

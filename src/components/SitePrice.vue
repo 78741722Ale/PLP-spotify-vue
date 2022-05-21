@@ -1,11 +1,11 @@
 <template>
   <div id="site_price">
-    <!-- Container Superiore -->
+    <!-- Upper container -->
     <div :class="price_cont">
       <div :class="price_row">
           <!-- Spotify premium specs -->
           <div :class="premium_cont">
-            <!-- Titolo premium -->
+            <!-- Title premium -->
             <h5 class="text-uppercase pb-4">{{premium_h5}}</h5>
             <!-- Hero Title -->
             <h1 class="pt-1 pb-4">{{premium_h1}}</h1>
@@ -13,7 +13,7 @@
             <p class="pb-3">{{premium_p}}</p>
             <!-- Hero Button -->
             <button>{{premium_btn}}</button>
-            <!-- Hero Subtitle (anche se subtitle dovrebbe essere un ancor) -->
+            <!-- Hero Subtitle -->
             <span class="pt-5">
               Solo con il piano Individual. Dopo, solo €9,99 al mese.
               <span class="subtitle">Si applicano termini e condizioni.</span> 
@@ -36,11 +36,11 @@ export default {
   /* Data */
   data() {
       return {
-       /* Classi Dinamiche */
+       /* Dynamic classes */
        price_cont : "h-100 container-xl w-100 p-0",   
        price_row : "row h-100 flex_cent w-100 p-0 m-0",
        price_specs : "",
-       /* Image Data and class */
+       /* Image Data and classes */
        price_hero : "col-4 h-75 flex_cent",
        hero_img : require("@/assets/img/jumbo.jpg"),
        hero_specs : "Jumbotron Image",
@@ -56,6 +56,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/* Import del foglio di stile */
+/* Import style sheet from partials */
 @import "@/assets/sass/partials/main.scss";
 </style>

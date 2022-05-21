@@ -1,4 +1,5 @@
 <template>
+  <!-- Component for "Lista Aziende"  -->
   <div class="col-3 h-75 p-0 footer_azienda">
     <ul class="pt-2">
       <li class="title">{{ title }}</li>
@@ -12,9 +13,8 @@ export default {
   name: "FooterListComponent",
   data() {
     return {
-      /* Struttura dati Titolo - Azienda */
+      /* Data Structure - Azienda */
       title : "Azienda",
-      /* Struttura dati v-for - Azienda */
       aziende: [
         {
           ref: "#",

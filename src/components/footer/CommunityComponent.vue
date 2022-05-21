@@ -1,4 +1,5 @@
 <template>
+  <!-- Component for "Community"  -->
   <div class="col-3 h-75 p-0 footer_azienda">
     <ul class="pt-2">
       <li class="title">{{ title }}</li>
@@ -12,11 +13,9 @@ export default {
   name: "FooterListComponent",
   data() {
     return {
-      /* Struttura dati Titolo - Community */
+      /* Data structure - Community */
       title : "Community",
-      /* Struttura dati v-for - Community */
       community : [
-        /* Titolo Azienda */
         {
           ref : "#",
           text : "Per Artisti",

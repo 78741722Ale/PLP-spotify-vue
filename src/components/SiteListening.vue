@@ -1,25 +1,23 @@
 <template>
     <div id="site_listening">
-            <div :class="listening_cont">
-                <!-- Listening in Everything goes here -->
-                <div :class="listening_row">
-                    <!-- Listening is everything specs -->
-                    <div :class="listening_specs_col">
-                        <!-- Titolo Spotify Free -->
-                        <h5 class="text-uppercase pb-4">{{listening_subtitle}}</h5>
-                        <!-- Title Listening -->
-                        <h1 class="pt-1 pb-4">{{listening_title}}</h1>
-                        <!-- Listening Text -->
-                        <p class="pb-4">{{listening_p}}</p>
-                        <!-- Listening Button -->
-                        <button>{{listening_btn}}</button>
-                    </div>
+        <div :class="listening_cont">
+            <!-- Listening in Everything -->
+            <div :class="listening_row">
+                <!-- Listening is everything specs -->
+                <div :class="listening_specs_col">
+                    <!-- Title Spotify Free -->
+                    <h5 class="text-uppercase pb-4">{{listening_subtitle}}</h5>
+                    <!-- Title Listening -->
+                    <h1 class="pt-1 pb-4">{{listening_title}}</h1>
+                    <!-- Listening Text -->
+                    <p class="pb-4">{{listening_p}}</p>
+                    <!-- Listening Button -->
+                    <button>{{listening_btn}}</button>
                 </div>
             </div>
-            <!-- img di sfondo goes here -->
-            <!-- Non avendo a disposizone immagine (ma solo screen) 
-            unico modo per riprodurre versione desktop è questa -->
-            <img :src="img_site_listening" :alt="img_site_listening_desc">
+        </div>
+        <!-- Having no image available (but only screen) the only way to reproduce the desktop version is this -->
+        <img :src="img_site_listening" :alt="img_site_listening_desc">
     </div>
 </template>
 
@@ -47,6 +45,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/* Import del foglio di stile */
+/* Import style sheet from partials */
 @import '@/assets/sass/partials/main.scss';
 </style>

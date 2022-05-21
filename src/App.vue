@@ -1,5 +1,5 @@
 <template>
-  <!-- MacroComponenti Principali -->
+  <!-- Main macro components -->
   <div id="app">
     <!-- Header -->
     <SiteHeader />
@@ -11,7 +11,7 @@
 </template>
 
 <script>
-/* Import dei macro componenti */
+/* Import of macro components */
 import SiteHeader from './components/SiteHeader.vue'
 import SiteMain from './components/SiteMain.vue'
 import SiteFooter from './components/SiteFooter.vue'
@@ -27,7 +27,7 @@ export default {
 </script>
 
 <style lang="scss">
-/* Foglio di stile principale racchiude ogni foglio di stile*/
+/* Import style sheets */
 @import '@/assets/sass/partials/app.scss';
 @import '@/assets/sass/style.scss';
 </style>

@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import App from './App.vue'
-/* Import di Bootstrap */
+/* Import of Bootstrap */
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 const bootstrap = require('bootstrap')
 Vue.use(bootstrap)
-/* Import di Font Awesome */
+/* Import of Font Awesome */
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faUserSecret, faCopyright } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faTwitter, faFacebook } from "@fortawesome/free-brands-svg-icons";

@@ -1,4 +1,5 @@
 <template>
+  <!-- Component for "Links"  -->
   <div class="col-3 h-75 p-0 footer_azienda">
     <ul class="pt-2">
       <li class="title">{{ title }}</li>
@@ -12,9 +13,8 @@ export default {
   name: "FooterListComponent",
   data() {
     return {
-      /* Struttura dati Titolo - Link Utili */
+      /* Data structure - Link Utili */
       title : "Link Utili",
-      /* Struttura dati v-for - Link Utili */
       links : [
         {
           ref : "#",

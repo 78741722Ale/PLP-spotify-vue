@@ -1,5 +1,5 @@
 <template>
-    <!-- Header Goes Here -->
+    <!-- SiteHeader -->
     <div id="site_header">
         <div :class="head_cont">
             <div :class="head_row">
@@ -23,16 +23,17 @@ export default {
     name: "SiteHeader",
     data() {
         return {
-        /* Classi Dinamiche */
+        /* Dynamic classes */
         head_cont : "container-xl p-0 h-100",
         head_row : "row h-100 w-100 p-0 m-0 flex_bet",
-        /* Logo Class */
+        /* Logo Classes */
         logo_classes : "col-2 h-100 d-flex justify-content-start align-items-center",
         logo_img: require("@/assets/img/h_logo.png"),
         logo_desc : "Logo Spotify",
         /* Navbar Classes */
         nav_cont : "col-5 p-0 h-100 flex_cent",
         list_cont : "flex_cent flex-row gap-5 m-0 p-0",
+        /* Navbar Data structure */
         nav_comp : [   
             {
                 ref : "#",
@@ -61,6 +62,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/* Import del foglio di stile */
+/* Import style sheet from partials */
 @import '@/assets/sass/partials/header.scss';
 </style>

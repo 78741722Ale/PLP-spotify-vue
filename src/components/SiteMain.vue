@@ -9,7 +9,7 @@
 </template>
 
 <script>
-/* Import dei Componenti */
+/* Import of Components */
 import SitePrice from '@/components/SitePrice.vue'
 import SiteListening from '@/components/SiteListening.vue'
 
@@ -23,6 +23,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/* Import del foglio di stile */
+/* Import style sheet from partials */
 @import '@/assets/sass/partials/main.scss';
 </style>

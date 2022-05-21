@@ -4,7 +4,7 @@
     padding: 0;
     justify-content: center;
     align-items: center;
-    height: 100%; //h-100
+    height: 100%; 
 }
 
 .brands {
@@ -26,23 +26,22 @@
 }
 
 .footer_azienda {
-    /* Container di list item */
+    /* list item container */
     ul {
         list-style: none;
         padding-left: 0;
         text-align: left;
     }
-    /* singolo list item */
+    /* single list item */
     li {
         padding-top: 1rem;
     }
-    /* collegamento */
     a {
         text-decoration: none;
         font-weight: inherit;
         color: $footer-list-text-color;
     }
-    /* Classe del titolo */
+    /* Title class */
     .title {
         text-transform: uppercase;
         font-size: 0.9rem;
@@ -55,14 +54,13 @@
     display: flex;
     justify-content: start;
     align-items: flex-end;
-    /* Container di list item */
+    /* list item container */
     ul {
         display: flex;
         flex-direction: row;
         list-style: none;
         padding-left: 0;
     }
-    /* collegamento */
     a {
         text-decoration: none;
         font-weight: 600;

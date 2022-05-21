@@ -4,7 +4,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  /* Dimensioni */
+  /* Dimensions */
   width: 100vw;
   height: 100vh;
   margin: 0 auto;
@@ -12,14 +12,14 @@
   overflow-x: hidden;
 }
 
-/* Regola generale */
+/* Common rule */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Stile della scrollbar - Per chrome */
+/* Style of scrollbar - for chrome */
 /* width of the entire scrollbar */
 #app::-webkit-scrollbar {
     width: 12px;  
@@ -35,7 +35,7 @@
     border: 0.5px solid #ffffff;  /* creates padding around scroll thumb */
 }
 
-/* Stile della scrollbar - Per Firefox */
+/*Style of scrollbar - for Firefox */
 #app {
     scrollbar-width: thin; 
     scrollbar-color: #1185b3 #ffffff;

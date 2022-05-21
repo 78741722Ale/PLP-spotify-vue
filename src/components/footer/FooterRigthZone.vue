@@ -5,12 +5,12 @@
     <div :class="footer_brands_row">
       <!-- Brands -->
       <div :class="footer_brands_col">
-        <!-- Ripetile tramite v-for -->
+        <!-- Repeated via v-for -->
         <div v-for="(element, index) in icons_list" :key="index" :class="icons_cells">
           <font-awesome-icon class="icon_type" :icon="element" />
         </div>
       </div>
-      <!-- Zone -->
+      <!-- CopyRigth Zone -->
       <div class="col-12 h-25 copy_zone pb-3">
         <span><font-awesome-icon :icon="copy_icon" />{{copy_text}}<a :href="linkedin_ref"><font-awesome-icon :icon="linkedin_icon" /></a></span>
       </div>
@@ -40,6 +40,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/* Import del foglio di stile */
+/* Import style sheet from partials */
 @import "@/assets/sass/partials/footer.scss";
 </style>
