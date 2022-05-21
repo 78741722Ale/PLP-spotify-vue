@@ -1,44 +1,18 @@
 <template>
   <!-- Footer left zone -->
-  <div class="col-8 p-0 h-100 bordo">
+  <div :class="footer_lz_cont">
     <!-- Row for the unordered list -->
-    <div class="row h-100 w-100 m-0 flex-wrap">
+    <div :class="footer_lz_row">
       <!-- Footer logo -->
       <div class="col-3 h-75 p-0 footer_logo">
-        <img src="@/assets/img/h_logo.png" alt="Logo nel footer" srcset="" />
+        <img :src="footer_lz_logo" :alt="footer_lz_logo_desc"/>
       </div>
-      <!-- Queste liste qua sotto sono un unico componente 
-      che si ripete più volte grazie a props, ma cambiando il ciclo del suo array/oggetto -->
-      <!-- Azienda -->
-      <div class="col-3 h-75 p-0 footer_azienda">
-        <ul>
-          <li class="title"><a href="#">Azienda</a></li>
-          <li><a href="#">Chi Siamo</a></li>
-          <li><a href="#">Opportunità di lavoro</a></li>
-          <li><a href="#">For The Record</a></li>
-        </ul>
-      </div>
-      <!-- Community -->
-      <div class="col-3 h-75 p-0 footer_azienda">
-        <ul>
-          <li class="title"><a href="#">Community</a></li>
-          <li><a href="#">Per Artisti</a></li>
-          <li><a href="#">Sviluppatori</a></li>
-          <li><a href="#">Pubblicità</a></li>
-          <li><a href="#">Link Utili</a></li>
-          <li><a href="#">Venditori</a></li>
-        </ul>
-      </div>
-      <!-- Link Utili -->
-      <div class="col-3 h-75 p-0 footer_azienda">
-        <ul>
-          <li class="title"><a href="#">Link Utili</a></li>
-          <li><a href="#">Assistenza</a></li>
-          <li><a href="#">Sviluppatori</a></li>
-          <li><a href="#">App per cellulare gratuita</a></li>
-          <li><a href="#">Diritti del consumatore</a></li>
-        </ul>
-      </div>
+      <!-- Azienda (suo v-for su aziende) -->
+      <AziendeComponent />
+      <!-- Community  (suo v-for su community) -->
+      <CommunityComponent />
+      <!-- Link Utili (suo v-for su links) -->
+      <LinksComponent />
       <!-- Information -->
       <div class="col-12 h-25 bordo">Informazioni legali</div>
     </div>
@@ -46,8 +20,32 @@
 </template>
 
 <script>
+/* Import Component lists */
+import AziendeComponent from '@/components/footer/AziendeComponent.vue'
+import CommunityComponent from '@/components/footer/CommunityComponent.vue'
+import LinksComponent from '@/components/footer/LinksComponent.vue'
+
+
 export default {
   name: "FooterRightZone",
+  /* Component */
+  components : {
+    AziendeComponent,
+    CommunityComponent,
+    LinksComponent
+  },
+  
+  /* Struttura Dati */
+  data() {
+    return {
+    /* Classi Dinamiche */
+      footer_lz_cont : "col-8 p-0 h-100 bordo",
+      footer_lz_row : "row h-100 w-100 m-0 flex-wrap",
+     /* Dati dinamici */
+      footer_lz_logo : require("@/assets/img/h_logo.png"),
+      footer_lz_logo_desc : "Spotify logo footer"
+    }
+  },
 };
 </script>
 
