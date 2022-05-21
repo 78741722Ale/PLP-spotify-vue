@@ -24,11 +24,16 @@ npm run build
 npm run lint
 ```
 
-### Programmi installati
+### NPM installed
 
 ```
 npm install bootstrap
 npm install autoprefixer@10.4.5 --save-exact
+npm i --save @fortawesome/fontawesome-svg-core
+npm i --save @fortawesome/free-solid-svg-icons
+npm i --save @fortawesome/vue-fontawesome
+npm i --save @fortawesome/free-brands-svg-icons
+
 ```
 
 ### Customize configuration
