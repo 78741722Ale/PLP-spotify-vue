@@ -7,11 +7,11 @@ const bootstrap = require('bootstrap')
 Vue.use(bootstrap)
 /* Import di Font Awesome */
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faUserSecret } from "@fortawesome/free-solid-svg-icons";
-import { faInstagram, faTwitter, faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faUserSecret, faCopyright } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin, faTwitter, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 /* Add icons to the library */
-library.add(faUserSecret, faTwitter, faInstagram, faFacebook)
+library.add(faUserSecret, faTwitter, faLinkedin, faFacebook, faCopyright)
 /* Add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

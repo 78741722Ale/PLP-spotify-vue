@@ -47,7 +47,7 @@
         text-transform: uppercase;
         font-size: 0.9rem;
         font-weight: 700;
-        color: $footer-list-title-color !important;
+        color: $footer-list-title-color;
     }
 }
 
@@ -92,5 +92,22 @@
     height: 30px;
     color: $footer-list-text-color;
 }
+
+.icon_type:hover {
+    color: $listening-text-color;
+    cursor: pointer;
+}
+
+.copy_zone {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    font-size: 0.8rem;
+}
+
+.copy_zone:hover {
+    color: $footer-icons-color;
+}
+
 
 /*#endregion*/

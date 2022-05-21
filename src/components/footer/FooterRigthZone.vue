@@ -11,7 +11,9 @@
         </div>
       </div>
       <!-- Zone -->
-      <div class="col-12 h-25 bordo">Client Zone</div>
+      <div class="col-12 h-25 copy_zone pb-3">
+        <span><font-awesome-icon :icon="copy_icon" />{{copy_text}}<a :href="linkedin_ref"><font-awesome-icon :icon="linkedin_icon" /></a></span>
+      </div>
     </div>
   </div>
 </template>
@@ -21,13 +23,17 @@ export default {
   name: "FooterRightZone",
   data() {
     return {
-    /* Classi dinamiche */
+    /* Dynamic classes */
     footer_brands_cont : "col-4 p-0 h-100",
     footer_brands_row : "row h-100 w-100 m-0 brands ",
     footer_brands_col : "col-12 h-25 icon_cont",
     icons_cells : "me-3 icons_cell flex_cent",
-    /* Dati dinamici  */
-    icons_list : ["fa-brands fa-twitter", "fa-brands fa-twitter", "fa-brands fa-facebook"]
+    copy_icon : "fa-solid fa-copyright",
+    linkedin_icon : "fa-brands fa-linkedin",
+    linkedin_ref : "https://www.linkedin.com/in/alessandro-pecorilla-8a98b7196/",
+    copy_text : "Created by Alessandro Pecorilla | Vue 2.0 | Linkedin Profile :",
+    /* Dynamic data */
+    icons_list : ["fa-brands fa-twitter", "fa-brands fa-linkedin", "fa-brands fa-facebook"]
     }
   },
 };
