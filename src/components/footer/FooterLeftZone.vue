@@ -14,7 +14,11 @@
       <!-- Link Utili (suo v-for su links) -->
       <LinksComponent />
       <!-- Information -->
-      <div class="col-12 h-25 bordo">Informazioni legali</div>
+      <div class="col-12 p-0 h-25 footer_terms">
+        <ul>
+          <li v-for="(element, index) in info" :key="index"><a href="element.ref">{{element.text}}</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
@@ -39,11 +43,33 @@ export default {
   data() {
     return {
     /* Classi Dinamiche */
-      footer_lz_cont : "col-8 p-0 h-100 bordo",
+      footer_lz_cont : "col-8 p-0 h-100",
       footer_lz_row : "row h-100 w-100 m-0 flex-wrap",
      /* Dati dinamici */
       footer_lz_logo : require("@/assets/img/h_logo.png"),
-      footer_lz_logo_desc : "Spotify logo footer"
+      footer_lz_logo_desc : "Spotify logo footer",
+      info : [
+        {
+          ref : "#",
+          text : "Informazioni Legali",  
+        },
+        {
+          ref : "#",
+          text : "Centro sulla privacy",  
+        },
+        {
+          ref : "#",
+          text : "Informativa sulla privacy",  
+        },
+        {
+          ref : "#",
+          text : "Impostazioni cookie",  
+        },
+        {
+          ref : "#",
+          text : "Info annunci",  
+        },
+      ]
     }
   },
 };
