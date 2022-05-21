@@ -71,3 +71,26 @@
 }
 /* #endregion */
 
+/*#region Footer Right zone  */
+
+.icons_cell {
+    width: 60px;
+    height: 60px;
+    background-color: $footer-icons-bg-color;
+    border-radius: 2rem;
+}
+
+.icon_cont {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.icon_type {
+    width: 30px;
+    height: 30px;
+    color: $footer-list-text-color;
+}
+
+/*#endregion*/
